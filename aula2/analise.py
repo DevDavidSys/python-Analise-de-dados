@@ -18,13 +18,8 @@ tabela = tabela.dropna(how="any",axis=0)
 #retira os valores vazios da tabela
 
 print(tabela.info())
-
 #passo 5
-
 for coluna in tabela:
     grafico = px.histogram(tabela,x=coluna,color="Churn")
     grafico.show()
-
-
-
-
+#passo 6 : Verificar os graficos criados e analisar
